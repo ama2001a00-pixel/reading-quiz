@@ -136,8 +136,10 @@ elif st.session_state.page == "quiz":
                 "kreta ayer wet market",
                 "kreta ayer"
             ],
-            any(word in q10.strip().lower()
-                for word in ["busy", "crowded"])
+            any(
+                word in q10.strip().lower()
+                for word in ["busy", "crowded"]
+            )
       ]
     score = sum(answers)
     percentage = score * 10
