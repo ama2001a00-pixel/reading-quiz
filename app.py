@@ -141,6 +141,7 @@ elif st.session_state.page == "quiz":
                 for word in ["busy", "crowded"]
             )
       ]
+        
     score = sum(answers)
     percentage = score * 10
     st.session_state.score = score
