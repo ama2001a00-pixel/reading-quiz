@@ -139,7 +139,7 @@ elif st.session_state.page == "quiz":
             any(word in q10.strip().lower()
                 for word in ["busy", "crowded"])
       ]
-     score = sum(answers)
+    score = sum(answers)
     percentage = score * 10
     st.session_state.score = score
     st.session_state.percentage = percentage
