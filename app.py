@@ -148,7 +148,7 @@ elif st.session_state.page == "quiz":
     st.rerun()
         
 elif st.session_state.page == "results":
-  st.header("Your Results")
+    st.header("Your Results")
     score = st.session_state.score
     percentage = st.session_state.percentage
 
