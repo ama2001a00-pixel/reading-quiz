@@ -142,12 +142,12 @@ elif st.session_state.page == "quiz":
             )
       ]
 score = sum(answers)
-        percentage = score * 10
-        st.session_state.score = score
-        st.session_state.percentage = percentage
-        st.session_state.answers = answers
-        st.session_state.page = "results"
-        st.rerun()
+percentage = score * 10
+st.session_state.score = score
+st.session_state.percentage = percentage
+st.session_state.answers = answers
+st.session_state.page = "results"
+st.rerun()
 elif st.session_state.page == "results":
     st.header("Your Results")
     score = st.session_state.score
